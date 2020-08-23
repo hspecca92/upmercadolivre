@@ -1,0 +1,31 @@
+## Documentação ##
+
+Versão Pyton 3.8
+Banco de Dados SQL Server Native Client 11.0
+Visual Studio Code
+
+Libs: requests
+      pyodbc
+      
+
+API Challenge MercadoLivre tem o objetivo de consultar uma API através do link https://www.dan.me.uk/torndes e:
+- Inserir as informações em um banco de dados com o resultado GET do site e consultar quando necessário
+- Uma inserção manual do usuário para inclusão de novos IPS ao banco e consultar a inserção manual
+- Deletar a inserção manual
+- Atualizar o GET deletando ips antigos e adicionando a nova lista ao banco de dados, com os valores obtidos através do GET do site mencionado
+
+Utilizado a lib requests para receber o valor GET do site.
+Utilizado a lib pyodbc para realizar a conexão com o SQL Server Native Cliente 11.0
+
+Consumindo a API e inserindo no banco: Metodo request.get para obtenção do texto uma variavel que recebe o resultado do GET armazena em formato texto e com uma função
+do python splita (separa cada valor exibido por linha).E para cada valor realiza uma inserção no banco de dados.
+
+Inserção manual de IPs: realiza a inserção através do INSERT SQL de um valor para o banco de dados.
+
+Deleta valores da tabela: realiza um DELETE SQL estipulado pelo usuário para deleção de um valor determinado.
+ 
+--------------------------------------------------------------------
+
+Docker
+Teste inconclusivo não consegui realizar o build do repositório.
+Dockerfile criado, container criado hspecca/apirestml porém a aplicação não respondeu

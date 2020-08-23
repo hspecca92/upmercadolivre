@@ -2,5 +2,4 @@
 Challenge
 
 
-Criado uma aplicação com Python 3 utilizando Sql Server Native Client 11.0
-Testes realizados através da IDE VS Code E Powershell Windows
+Criado uma aplicação com Python 3.8 utilizando Sql Server Native Client 11.0

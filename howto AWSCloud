@@ -1,0 +1,10 @@
+## Como rodar a aplicação em Cloud AWS ##
+
+Em uma estrutura realizada de forma coerente o banco S3 será instalado numa instância apartada de uma aplicação EC2.
+
+Porém, como a API desenvolvida não necessáriamente precisará de um servidor full time, pois trata-se de gets e posts,
+Podemos usar um recurso Serveless, executado um script para um retorno get, armazenando no Servidor S3 e consulta dos IPs maliciosos,
+assim pouparemos recursos. 
+
+Com o docker seria possível realizar o mesmo retorno, a AWS possui instancias iniciadas e encerradas por containers, assim poderiamos também usar como se fosse um serveless.
+

@@ -1,12 +1,28 @@
 ## Documentação ##
 
-Versão Pyton 3.8
+Versão Python 3.8
 Banco de Dados SQL Server Native Client 11.0
 Visual Studio Code
-
 Libs: requests
       pyodbc
-      
+
+
+########### Requisitos ###########  
+Instalação do Python V 3.8
+No diretório da aplicação executar:
+
+CMD python get-pip.py
+CMD python -m pip install requests
+CMD pip install pyodbc
+CMD pip install 
+
+## Banco de dados SQL Server ##
+Criar Tabela blackilst {coluna} ip VARCHAR 200
+[CREATE TABLE blacklist (ip varchar(200))]
+Criar Tabela manuallist {coluna} manualip VARCHAR 200
+[CREATE TABLE manualist (manualip varchar(200))]
+
+--------------------------------------------------------------------
 
 API Challenge MercadoLivre tem o objetivo de consultar uma API através do link https://www.dan.me.uk/torndes e:
 - Inserir as informações em um banco de dados com o resultado GET do site e consultar quando necessário
